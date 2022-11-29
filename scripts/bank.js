@@ -7,5 +7,9 @@ document.getElementById("deposit-btn").addEventListener("click",function(){
 });
 
 document.getElementById("withdraw-btn").addEventListener("click",function(){
-    console.log("clicked");
+    var withdrawAmount = document.getElementById("withdraw-amnt").value;
+    var totalWithdrawAmount = document.getElementById("withdraw-current-amnt").innerText;
+    var balanceAmount = document.getElementById("balance-amnt").innerText;
+    document.getElementById("withdraw-current-amnt").innerText = parseFloat(withdrawAmount) + parseFloat(totalWithdrawAmount);
+    document.getElementById("balance-amnt").innerText = parseFloat(balanceAmount) - parseFloat(withdrawAmount);
 });
