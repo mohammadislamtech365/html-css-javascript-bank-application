@@ -48,7 +48,6 @@
     width:45%;
     margin:10px;
     display:inline-block;
-    height:200px;
     border-radius: 10px;
     box-sizing: border-box;
     padding:20px;
@@ -72,9 +71,22 @@
     font-weight: 900;
 }
 
-#withdraw {
+#withdraw-amnt{
     background-color: red;
+    border-radius: 5px;
 }
-#deposit {
-    background-color: rgb(231, 255, 47);
+#deposit-amnt{
+    background-color: rgb(78, 47, 255);
+    border-radius: 5px;
+}
+
+#deposit-btn,#withdraw-btn {
+    margin-top:5px;
+    border:none;
+    padding:5px;
+    font-size: 20px;
+    background-color: coral;
+    margin-bottom: 20px;
+    border-radius:10px;
+    color:var(--secondary-text-color);
 }
