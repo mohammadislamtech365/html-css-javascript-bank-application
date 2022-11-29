@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-   --primary-background-color:rgb(155, 155, 205);
+   --primary-background-color:rgb(205, 173, 155);
    --secondary-background-color:rgb(169, 210, 177);
    --secondary-text-color:white;
 }
@@ -42,13 +42,13 @@ body {
 .form-element-container input:focus {
     background-color: antiquewhite;
 }
-.login-btn {
+#login-btn {
     background-color: var(--primary-background-color);
     padding:10px;
     border:none;
     border-radius:5px;
-    color:rgb(210, 113, 34);
-    font-size: 12px;
+    color:var(--secondary-text-color);
+    font-size: 14px;
 }
 
 
