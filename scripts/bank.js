@@ -4,10 +4,12 @@ document.getElementById("deposit-btn").addEventListener("click", function () {
     "deposit-current-amnt"
   ).innerText;
   var balanceAmount = document.getElementById("balance-amnt").innerText;
-  document.getElementById("deposit-current-amnt").innerText =
-    parseFloat(depositAmount) + parseFloat(totalDepositAmount);
-  document.getElementById("balance-amnt").innerText =
-    parseFloat(balanceAmount) + parseFloat(depositAmount);
+  if (depositAmount !== "") {
+    document.getElementById("deposit-current-amnt").innerText =
+    Math.abs(parseFloat(depositAmount)) + parseFloat(totalDepositAmount);
+    document.getElementById("balance-amnt").innerText =
+    parseFloat(balanceAmount) + Math.abs(parseFloat(depositAmount));
+  }
   document.getElementById("deposit-amnt").value = "";
 });
 
@@ -17,9 +19,11 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
     "withdraw-current-amnt"
   ).innerText;
   var balanceAmount = document.getElementById("balance-amnt").innerText;
-  document.getElementById("withdraw-current-amnt").innerText =
-    parseFloat(withdrawAmount) + parseFloat(totalWithdrawAmount);
-  document.getElementById("balance-amnt").innerText =
-    parseFloat(balanceAmount) - parseFloat(withdrawAmount);
+  if (withdrawAmount !== "") {
+    document.getElementById("withdraw-current-amnt").innerText =
+    Math.abs(parseFloat(withdrawAmount)) + parseFloat(totalWithdrawAmount);
+    document.getElementById("balance-amnt").innerText =
+    parseFloat(balanceAmount) - Math.abs(parseFloat(withdrawAmount));
+  }
   document.getElementById("withdraw-amnt").value = "";
 });
