@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Account MY BANK</title>
-    <link rel="stylesheet" href="./styles/bank.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/bank.css" />
+  </head>
+  <body>
     <header class="bank-account-header">
-        <h1>ACCOUNT SECTION <span class="bank-name">MY BANK</span> </h1>
+      <h1>ACCOUNT SECTION <span class="bank-name">MY BANK</span></h1>
     </header>
     <main class="bank-account-main">
-        <section class="balance-section">
-            <div class="balance-card" id="deposit-box">
-                <h2>Deposit</h2>
-                <h2>$$<span id="deposit-current-amnt">00</span></h2>
-            </div>
-            <div class="balance-card" id="withdraw-box">
-                <h2>Withdraw</h2>
-                <h2 >$$<span id="withdraw-current-amnt">00</span></h2>
-            </div>
-            <div class="balance-card" id="balance-box">
-                <h2>Balance</h2>
-                <h2><span id="balance-amnt">1240</span></h2>
-            </div>
-        </section>
-        <section class="bank-account-input">
-            <div class="input-card" id="deposit-card">
-                    <h2>Please Deposit</h2>
-                    <div>
-                        <label for="Deposit">Deposit: </label><br>
-                        <input type="number" id="deposit-amnt" ><br>
-                        <button id="deposit-btn">Deposit</button>
-                    </div>
-            </div>
-            <div class="input-card" id="withdraw-card">
-                    <h2>Withdraw</h2>
-                    <div>
-                        <label for="withdraw">Withdraw amount</label><br>
-                        <input type="number" id="withdraw-amnt"><br>
-                        <button id="withdraw-btn">Withdraw</button>
-                    </div>
-            </div>
-        </section>
+      <section class="balance-section">
+        <div class="balance-card" id="deposit-box">
+          <h2>Deposit</h2>
+          <h2>$$<span id="deposit-current-amnt">00</span></h2>
+        </div>
+        <div class="balance-card" id="withdraw-box">
+          <h2>Withdraw</h2>
+          <h2>$$<span id="withdraw-current-amnt">00</span></h2>
+        </div>
+        <div class="balance-card" id="balance-box">
+          <h2>Balance</h2>
+          <h2><span id="balance-amnt">1240</span></h2>
+        </div>
+      </section>
+      <section class="bank-account-input">
+        <div class="input-card" id="deposit-card">
+          <h2>Please Deposit</h2>
+          <div>
+            <label for="Deposit">Deposit: </label><br />
+            <input type="number" id="deposit-amnt" /><br />
+            <button id="deposit-btn">Deposit</button>
+          </div>
+        </div>
+        <div class="input-card" id="withdraw-card">
+          <h2>Withdraw</h2>
+          <div>
+            <label for="withdraw">Withdraw amount</label><br />
+            <input type="number" id="withdraw-amnt" /><br />
+            <button id="withdraw-btn">Withdraw</button>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./scripts/bank.js"></script>
-</body>
+  </body>
 </html>
