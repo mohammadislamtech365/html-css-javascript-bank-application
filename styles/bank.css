@@ -74,10 +74,12 @@
 #withdraw-amnt{
     background-color: red;
     border-radius: 5px;
+    color: var(--secondary-text-color);
 }
 #deposit-amnt{
     background-color: rgb(78, 47, 255);
     border-radius: 5px;
+    color: var(--secondary-text-color);
 }
 
 #deposit-btn,#withdraw-btn {

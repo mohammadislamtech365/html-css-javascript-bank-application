@@ -15,15 +15,15 @@
         <section class="balance-section">
             <div class="balance-card" id="deposit-box">
                 <h2>Deposit</h2>
-                <h2>$$00</h2>
+                <h2>$$<span id="deposit-current-amnt">00</span></h2>
             </div>
             <div class="balance-card" id="withdraw-box">
                 <h2>Withdraw</h2>
-                <h2>$$00</h2>
+                <h2 >$$<span id="withdraw-current-amnt">00</span></h2>
             </div>
             <div class="balance-card" id="balance-box">
                 <h2>Balance</h2>
-                <h2>$$1240</h2>
+                <h2><span id="balance-amnt">1240</span></h2>
             </div>
         </section>
         <section class="bank-account-input">
@@ -31,7 +31,7 @@
                     <h2>Please Deposit</h2>
                     <div>
                         <label for="Deposit">Deposit: </label><br>
-                        <input type="number" id="deposit-amnt"><br>
+                        <input type="number" id="deposit-amnt" ><br>
                         <button id="deposit-btn">Deposit</button>
                     </div>
             </div>
