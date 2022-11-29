@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+   --primary-background-color:rgb(155, 155, 205);
+   --secondary-background-color:rgb(169, 210, 177);
+   --secondary-text-color:white;
+}
+body {
+    margin:0px;
+    padding-top:50px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.bank-form {
+    padding:10vh;
+    background-color:var(--primary-background-color);
+}
+.bank-name {
+    color:purple;
+    
+}
+.login-form {
+    margin-top:5vh;
+    background-color: var(--secondary-background-color);
+    width:50%;
+    padding:2vh;
+    /* margin:auto; */
+    display:inline-block;
+}
+.form-element-container {
+    margin:10px;
+    font-size: 20px;
+}
+
+.form-element-container input {
+    font-size:20px;
+    border:none;
+    padding:5px;
+    border-radius:5px;
+}
+.form-element-container input:focus {
+    background-color: antiquewhite;
+}
+.login-btn {
+    background-color: var(--primary-background-color);
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    color:rgb(210, 113, 34);
+    font-size: 12px;
+}
+
+
+
