@@ -15,7 +15,7 @@ document.getElementById("deposit-btn").addEventListener("click", function () {
   const depositAmount = getInput("deposit-amnt");
   const totalDepositAmount = getElement('deposit-current-amnt');
   const balanceAmount = getElement('balance-amnt');
-  if (depositAmount !== "") {
+  if (!isNaN(depositAmount)) {
     document.getElementById("deposit-current-amnt").innerText =
     Math.abs(depositAmount) + totalDepositAmount;
     document.getElementById("balance-amnt").innerText =
@@ -28,7 +28,7 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
   const withdrawAmount = getInput("withdraw-amnt");
   const totalWithdrawAmount = getElement("withdraw-current-amnt");
   const balanceAmount = getElement("balance-amnt");
-  if (withdrawAmount !== "") {
+  if (!isNaN(withdrawAmount)) {
     document.getElementById("withdraw-current-amnt").innerText =
     Math.abs(parseFloat(withdrawAmount)) + parseFloat(totalWithdrawAmount);
     document.getElementById("balance-amnt").innerText =
